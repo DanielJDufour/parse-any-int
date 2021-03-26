@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Parse Any Integer! Includes support for numerical separators, commas, and an extra plus sign (+)",
   "main": "parse-any-int.js",
+  "files": [
+    "parse-any-int.js"
+  ],
   "scripts": {
     "test": "node test.js"
   },
