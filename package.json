@@ -1,0 +1,28 @@
+{
+  "name": "parse-any-int",
+  "version": "0.0.0",
+  "description": "Parse Any Integer! Includes support for numerical separators, commas, and an extra plus sign (+)",
+  "main": "parse-any-int.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJDufour/parse-any-int.git"
+  },
+  "keywords": [
+    "integer",
+    "number",
+    "parse",
+    "safe"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DanielJDufour/parse-any-int/issues"
+  },
+  "homepage": "https://github.com/DanielJDufour/parse-any-int#readme",
+  "dependencies": {
+    "is-integer-string": "^0.0.0"
+  }
+}
