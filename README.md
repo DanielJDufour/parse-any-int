@@ -2,6 +2,11 @@
 Parse Any Integer!  Includes support for numerical separators, commas, and an extra plus sign (+)
 
 # install
+```bash
+npm install parse-any-int
+```
+
+# usage
 ```js
 const parseAnyInt = require("parse-any-int");
 
