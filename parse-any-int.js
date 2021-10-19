@@ -6,7 +6,7 @@ const parseAnyInt = (str, options) => {
     if (debug) console.log("[parse-any-int] starting with", { str, options });
 
     // be forgiving and trim any extra white space
-    str = str.trim()
+    if (typeof str === "string") str = str.trim()
 
     if (!isIntegerString(str)) {
       if (debug) {
@@ -20,10 +20,15 @@ const parseAnyInt = (str, options) => {
       .replaceAll(/[_,]/g,'') // remove all numerical separators
       .replace(/^\+/, ''); // remove starting +
 
-    const int = parseInt(left);
+    // we use Number(...) instead of parseInt
+    // because Number supports scientific notation (e.g. 123e45)
+    // but parseInt does not support this
+    if (debug) console.log("[parse-any-int] Number(\"" + left + "\")");
+    const int = Number(left);
     if (isNaN(int)) return null;
     else return int;
   } catch (error) {
+    if (debug) console.log("[parse-any-int] caught the following error, so returning null:\n", error);
     return null;
   }
 };

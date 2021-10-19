@@ -25,7 +25,10 @@
     "url": "https://github.com/DanielJDufour/parse-any-int/issues"
   },
   "homepage": "https://github.com/DanielJDufour/parse-any-int#readme",
+  "devDependencies": {
+    "flug": "^2.1.0"
+  },
   "dependencies": {
-    "is-integer-string": "^0.0.0"
+    "is-integer-string": "^0.0.2"
   }
 }
