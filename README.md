@@ -1,5 +1,5 @@
 # parse-any-int
-Parse Any Integer!  Includes support for numerical separators, commas, and an extra plus sign (+)
+Parse Any Integer!  Includes support for numerical separators, commas, scientific notation, and an extra plus sign (+).
 
 # install
 ```bash
