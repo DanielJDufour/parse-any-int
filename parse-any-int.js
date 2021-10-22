@@ -17,7 +17,7 @@ const parseAnyInt = (str, options) => {
     }
     const left = str
       .split(".")[0] // get everything left of the decimal point
-      .replaceAll(/[_,]/g,'') // remove all numerical separators
+      .replace(/[_,]/g,'') // remove all numerical separators
       .replace(/^\+/, ''); // remove starting +
 
     // we use Number(...) instead of parseInt
